@@ -1,6 +1,6 @@
 # Prompts
 
-A tool that allows developers to make more customizable and interactive UI elements. Was made with simplicity in mind.
+A tool for Unity Engine that extends default user interface called UnityUI. Allows developers to make more customizable and interactive UI elements. Was made with simplicity in mind.
 
 
 # Project Beat Integration
