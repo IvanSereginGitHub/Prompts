@@ -1,6 +1,7 @@
 # Prompts
 
 An open-source (MIT license) tool for Unity Engine that is based on default user interface called UnityUI. Allows developers to make more customizable and interactive UI elements, popup panels, hints etc.
+Also has support for TextMeshPro.
 
 
 # Project Beat Integration
