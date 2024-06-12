@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using vanIvan.Prompts;
 
 public static class PromptExtensions
 {

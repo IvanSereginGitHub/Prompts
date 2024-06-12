@@ -6,6 +6,7 @@ using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using vanIvan.Prompts;
 
 [System.Serializable]
 public class SerializableDictionary<T1, T2> where T1 : class
