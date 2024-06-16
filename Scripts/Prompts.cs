@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -90,6 +91,12 @@ namespace vanIvan.Prompts
         public static Canvas canvasParent;
         private void Awake()
         {
+            // Check availability of all resources
+            if (Resources.Load("PromptPanel") == null)
+            {
+                Destroy(this.gameObject);
+                throw new Exception("Necessary resources were not found. Please make sure that necessary resources from Prefabs folder were moved to Assets/Resources folder!");
+            }
             instance = this;
         }
         public static Prompt CreateNewPrompt(string text)
