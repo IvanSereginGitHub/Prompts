@@ -400,7 +400,15 @@ namespace vanIvan.Prompts
             // _ok.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = prompt.okName;
             // _cancel.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = prompt.cancelName;
         }
-
+        // Destroy all non-keeped prompts (only use that if amount of opened prompts is unknown)
+        public static void DestroyAllPrompts() {
+            foreach(Transform t in canvasParent.transform) {
+                if(t.gameObject.GetComponent<PromptPanel>().keepAlive == false) {
+                    Destroy(t.gameObject);
+                }
+            }
+        }
+        
         public static void ShowPrompt(Prompt prompt)
         {
             if (prompt.associatedPrefab == null)
